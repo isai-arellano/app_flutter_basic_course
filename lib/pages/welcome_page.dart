@@ -1,3 +1,4 @@
+import 'package:app_flutter_basic_course/pages/sign_in_page.dart';
 import 'package:flutter/material.dart';
 
 class WelcomePage extends StatelessWidget {
@@ -27,7 +28,7 @@ class WelcomePage extends StatelessWidget {
                 topRight: Radius.circular(40)
               )
             ),
-            child:    Padding(
+            child: Padding(
               padding: const EdgeInsets.fromLTRB(20,50,20,50),
               child: Column( 
                  crossAxisAlignment: CrossAxisAlignment.start,
@@ -55,7 +56,9 @@ class WelcomePage extends StatelessWidget {
                         backgroundColor: Colors.black,
                         foregroundColor: Colors.white
                       ),
-                      onPressed: (){}, 
+                      onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const SignInPage()));
+                      },
                       child: const Text(
                         'Sign In',
                         style: TextStyle(
