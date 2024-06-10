@@ -1,0 +1,14 @@
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/logov1.png
+  color_dark: "#ffffff"
+  image_dark: assets/images/logov1.png
+  
+  android_12:
+    color: "#ffffff"
+    image: assets/images/logov1.png
+    icon_background_color: "#ffffff"
+    image_dark: assets/images/logov1.png
+    icon_background_color_dark: "#ffffff"
+
+  web: true

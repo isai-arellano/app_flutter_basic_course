@@ -1,4 +1,5 @@
 import 'package:app_flutter_basic_course/pages/sign_in_page.dart';
+import 'package:app_flutter_basic_course/pages/sign_up_page.dart';
 import 'package:flutter/material.dart';
 
 class WelcomePage extends StatelessWidget {
@@ -84,7 +85,9 @@ class WelcomePage extends StatelessWidget {
                           fontWeight: FontWeight.bold
                         ),
                         ),
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const SignUpPage()));
+                      },
                       ),
                       )
                     ],

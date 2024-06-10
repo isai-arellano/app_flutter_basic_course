@@ -1,3 +1,4 @@
+import 'package:app_flutter_basic_course/pages/sign_up_page.dart';
 import 'package:flutter/material.dart';
 
 class SignInPage extends StatelessWidget {
@@ -15,12 +16,16 @@ class SignInPage extends StatelessWidget {
           },
         ),
         actions: [
-          Container(
-              padding: const EdgeInsets.only(right: 20),
-              child: const Text(
-                'Register',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ))
+          GestureDetector(
+            child: Container(
+                padding: const EdgeInsets.only(right: 20),
+                child: const Text(
+                  'Register',
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                ),
+                ),
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const SignUpPage())),
+          )
         ],
       ),
       body: Container(
@@ -125,11 +130,6 @@ class SignInPage extends StatelessWidget {
                                   backgroundColor: Colors.black,
                                   foregroundColor: Colors.white),
                               onPressed: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) =>
-                                            const SignInPage()));
                               },
                               child: const Text(
                                 'Sign In',
